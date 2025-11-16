@@ -1,0 +1,35 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    ports:
+      - "5672:5672" 
+      - "15672:15672"   
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBIT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBIT_PASS}
+    networks:
+      - eventnet
+
+  eventhub:
+    build:
+      context: ../services/EventHub
+      dockerfile: Dockerfile
+    container_name: eventhub
+    depends_on:
+      - rabbitmq
+    environment:
+      ASPNETCORE_URLS: "http://0.0.0.0:8080"
+      RabbitMQ__HostName: rabbitmq
+      RabbitMQ__UserName: ${RABBIT_USER}
+      RabbitMQ__Password: ${RABBIT_PASS}
+      RabbitMQ__QueueName: hello
+    ports:
+      - "8080:8080"  # expose SignalR endpoint to host
+    networks:
+      - eventnet
+
+networks:
+  eventnet:
+    driver: bridge

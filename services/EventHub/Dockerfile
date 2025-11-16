@@ -1,18 +1,15 @@
-﻿# Build stage
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
-
-COPY . ./
-RUN dotnet restore
-RUN dotnet publish -c Release -o /app/publish
-
-# Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+﻿FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /app
 
-COPY --from=build /app/publish .
+COPY *.csproj ./
+RUN dotnet restore
 
-# Expose the web port (for SignalR)
-EXPOSE 8080
+COPY . ./
+RUN dotnet publish -c Release -o out
 
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+WORKDIR /app
+COPY --from=build /app/out .
+
+EXPOSE 5000
 ENTRYPOINT ["dotnet", "EventHub.dll"]

@@ -18,12 +18,12 @@ builder.Services.AddHostedService<RabbitMqListener>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy =>
+    options.AddPolicy("CorsPolicy", policy =>
     {
-        policy.AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials()
-              .SetIsOriginAllowed(_ => true); // allow all origins for dev
+        policy.WithOrigins("http://localhost:3000")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
     });
 });
 
@@ -31,7 +31,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-app.UseCors();
+app.UseCors("CorsPolicy");
 
 app.MapHub<MessageHub>("/messages");
 

@@ -1,5 +1,4 @@
-// components/EventHubMessages.tsx
-"use client"; // needed in Next.js 16 for client-side code
+"use client";
 
 import { useEffect, useState } from "react";
 import * as signalR from "@microsoft/signalr";
@@ -14,7 +13,7 @@ export default function EventHubMessages() {
 
     useEffect(() => {
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl("http://localhost:8080/messages") // EventHub hub URL
+            .withUrl("http://localhost:8080/messages", { withCredentials: true })
             .withAutomaticReconnect()
             .build();
 
@@ -27,17 +26,18 @@ export default function EventHubMessages() {
         });
 
         return () => {
+            console.log("Disconnected from EventHub");
             connection.stop();
         };
     }, []);
-
+    console.log(messages);
     return (
         <div>
             <h2>EventHub Messages</h2>
             <ul>
                 {messages.map((m, i) => (
                     <li key={i}>
-                        [{new Date(m.timestamp).toLocaleTimeString()}] {m.text}
+                       {m}
                     </li>
                 ))}
             </ul>

@@ -1,5 +1,7 @@
 'use client';
 
+import { type LucideIcon, MoreHorizontal } from 'lucide-react';
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -14,7 +16,6 @@ import {
     useSidebar
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { type LucideIcon, MoreHorizontal } from 'lucide-react';
 
 export function NavMain({
     items

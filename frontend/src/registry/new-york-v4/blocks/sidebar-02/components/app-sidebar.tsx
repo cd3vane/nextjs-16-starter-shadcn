@@ -1,3 +1,4 @@
+import { ChevronRight } from 'lucide-react';
 import * as React from 'react';
 
 import { SearchForm } from '@/registry/new-york-v4/blocks/sidebar-02/components/search-form';
@@ -16,7 +17,6 @@ import {
     SidebarRail
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { ChevronRight } from 'lucide-react';
 
 // This is sample data.
 const data = {

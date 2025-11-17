@@ -1,3 +1,4 @@
+import { ChevronRight, File, Folder } from 'lucide-react';
 import * as React from 'react';
 
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/registry/new-york-v4/ui/collapsible';
@@ -15,7 +16,6 @@ import {
     SidebarRail
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { ChevronRight, File, Folder } from 'lucide-react';
 
 // This is sample data.
 const data = {

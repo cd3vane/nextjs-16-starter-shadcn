@@ -1,10 +1,12 @@
 'use client';
 
 import * as React from 'react';
+import { Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
+import type {
+    ChartConfig} from '@/registry/new-york-v4/ui/chart';
 import {
-    ChartConfig,
     ChartContainer,
     ChartLegend,
     ChartLegendContent,
@@ -13,7 +15,6 @@ import {
 } from '@/registry/new-york-v4/ui/chart';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/registry/new-york-v4/ui/select';
 
-import { Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
 
 export const description = 'An interactive area chart';
 

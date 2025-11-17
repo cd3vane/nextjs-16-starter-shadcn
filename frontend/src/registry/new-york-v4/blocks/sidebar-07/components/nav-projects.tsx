@@ -1,5 +1,7 @@
 'use client';
 
+import { Folder, Forward, type LucideIcon, MoreHorizontal, Trash2 } from 'lucide-react';
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -17,7 +19,6 @@ import {
     useSidebar
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { Folder, Forward, type LucideIcon, MoreHorizontal, Trash2 } from 'lucide-react';
 
 export function NavProjects({
     projects

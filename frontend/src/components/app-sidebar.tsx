@@ -1,5 +1,16 @@
 'use client';
 
+import {
+    AudioWaveform,
+    BookOpen,
+    Bot,
+    ChevronRightIcon,
+    Command,
+    GalleryVerticalEnd,
+    Search,
+    Settings2,
+    SquareTerminal
+} from 'lucide-react';
 import * as React from 'react';
 
 import { Index } from '@/__registry__';
@@ -25,17 +36,6 @@ import {
     SidebarRail
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import {
-    AudioWaveform,
-    BookOpen,
-    Bot,
-    ChevronRightIcon,
-    Command,
-    GalleryVerticalEnd,
-    Search,
-    Settings2,
-    SquareTerminal
-} from 'lucide-react';
 
 // This is sample data.
 const data = {

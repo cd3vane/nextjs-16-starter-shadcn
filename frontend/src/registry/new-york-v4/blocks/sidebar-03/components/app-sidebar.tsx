@@ -1,3 +1,4 @@
+import { GalleryVerticalEnd } from 'lucide-react';
 import * as React from 'react';
 
 import {
@@ -14,7 +15,6 @@ import {
     SidebarRail
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { GalleryVerticalEnd } from 'lucide-react';
 
 // This is sample data.
 const data = {

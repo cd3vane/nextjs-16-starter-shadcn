@@ -1,5 +1,6 @@
 'use client';
 
+import { ArchiveX, Command, File, Inbox, Send, Trash2 } from 'lucide-react';
 import * as React from 'react';
 
 import { NavUser } from '@/registry/new-york-v4/blocks/sidebar-09/components/nav-user';
@@ -19,7 +20,6 @@ import {
 } from '@/registry/new-york-v4/ui/sidebar';
 import { Switch } from '@/registry/new-york-v4/ui/switch';
 
-import { ArchiveX, Command, File, Inbox, Send, Trash2 } from 'lucide-react';
 
 // This is sample data
 const data = {

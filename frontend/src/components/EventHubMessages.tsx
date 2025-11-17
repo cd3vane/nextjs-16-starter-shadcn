@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import * as signalR from "@microsoft/signalr";
+import { useEffect, useState } from "react";
 
 interface Message {
     text: string;

@@ -1,11 +1,12 @@
 'use client';
 
 import * as React from 'react';
+import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
-import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from '@/registry/new-york-v4/ui/chart';
+import type { ChartConfig} from '@/registry/new-york-v4/ui/chart';
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/registry/new-york-v4/ui/chart';
 
-import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
 
 export const description = 'An interactive bar chart';
 

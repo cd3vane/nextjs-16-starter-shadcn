@@ -1,11 +1,11 @@
 'use client';
 
+import { REGEXP_ONLY_DIGITS } from 'input-otp';
 import * as React from 'react';
 
 import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from '@/registry/new-york-v4/ui/input-otp';
 import { Label } from '@/registry/new-york-v4/ui/label';
 
-import { REGEXP_ONLY_DIGITS } from 'input-otp';
 
 export function InputOTPDemo() {
     return (

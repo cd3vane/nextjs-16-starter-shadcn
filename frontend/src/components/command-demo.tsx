@@ -1,5 +1,6 @@
 'use client';
 
+import { Calculator, Calendar, CreditCard, Settings, Smile, User } from 'lucide-react';
 import * as React from 'react';
 
 import {
@@ -13,7 +14,6 @@ import {
     CommandShortcut
 } from '@/registry/new-york-v4/ui/command';
 
-import { Calculator, Calendar, CreditCard, Settings, Smile, User } from 'lucide-react';
 
 export function CommandDemo() {
     const [open, setOpen] = React.useState(false);

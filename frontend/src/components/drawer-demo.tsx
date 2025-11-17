@@ -1,6 +1,8 @@
 'use client';
 
+import { Minus, Plus } from 'lucide-react';
 import * as React from 'react';
+import { Bar, BarChart, ResponsiveContainer } from 'recharts';
 
 import { Button } from '@/registry/new-york-v4/ui/button';
 import {
@@ -14,8 +16,6 @@ import {
     DrawerTrigger
 } from '@/registry/new-york-v4/ui/drawer';
 
-import { Minus, Plus } from 'lucide-react';
-import { Bar, BarChart, ResponsiveContainer } from 'recharts';
 
 const data = [
     {

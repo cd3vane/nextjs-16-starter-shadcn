@@ -1,5 +1,7 @@
 'use client';
 
+import { ChevronRight, type LucideIcon } from 'lucide-react';
+
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/registry/new-york-v4/ui/collapsible';
 import {
     SidebarGroup,
@@ -12,7 +14,6 @@ import {
     SidebarMenuSubItem
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { ChevronRight, type LucideIcon } from 'lucide-react';
 
 export function NavMain({
     items

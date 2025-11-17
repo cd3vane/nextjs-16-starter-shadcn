@@ -1,3 +1,4 @@
+import { GalleryVerticalEnd } from 'lucide-react';
 import * as React from 'react';
 
 import { NavMain } from '@/registry/new-york-v4/blocks/sidebar-06/components/nav-main';
@@ -13,7 +14,6 @@ import {
     SidebarRail
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { GalleryVerticalEnd } from 'lucide-react';
 
 // This is sample data.
 const data = {

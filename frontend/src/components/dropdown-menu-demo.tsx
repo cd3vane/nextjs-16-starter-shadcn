@@ -1,5 +1,20 @@
 'use client';
 
+import {
+    BadgeCheckIcon,
+    BellIcon,
+    ChevronsUpDownIcon,
+    CreditCardIcon,
+    LogOut,
+    LogOutIcon,
+    MoreHorizontalIcon,
+    PencilIcon,
+    Settings2Icon,
+    ShareIcon,
+    SparklesIcon,
+    TrashIcon,
+    UserIcon
+} from 'lucide-react';
 import * as React from 'react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/registry/new-york-v4/ui/avatar';
@@ -22,21 +37,6 @@ import {
     DropdownMenuTrigger
 } from '@/registry/new-york-v4/ui/dropdown-menu';
 
-import {
-    BadgeCheckIcon,
-    BellIcon,
-    ChevronsUpDownIcon,
-    CreditCardIcon,
-    LogOut,
-    LogOutIcon,
-    MoreHorizontalIcon,
-    PencilIcon,
-    Settings2Icon,
-    ShareIcon,
-    SparklesIcon,
-    TrashIcon,
-    UserIcon
-} from 'lucide-react';
 
 export function DropdownMenuDemo() {
     return (

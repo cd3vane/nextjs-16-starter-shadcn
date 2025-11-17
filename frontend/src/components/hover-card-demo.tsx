@@ -1,8 +1,9 @@
+import { CalendarIcon } from 'lucide-react';
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/registry/new-york-v4/ui/avatar';
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/registry/new-york-v4/ui/hover-card';
 
-import { CalendarIcon } from 'lucide-react';
 
 export function HoverCardDemo() {
     return (

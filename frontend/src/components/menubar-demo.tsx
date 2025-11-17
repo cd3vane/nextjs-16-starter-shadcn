@@ -1,3 +1,5 @@
+import { HelpCircleIcon, SettingsIcon, Trash2Icon } from 'lucide-react';
+
 import {
     Menubar,
     MenubarCheckboxItem,
@@ -15,7 +17,6 @@ import {
     MenubarTrigger
 } from '@/registry/new-york-v4/ui/menubar';
 
-import { HelpCircleIcon, SettingsIcon, Trash2Icon } from 'lucide-react';
 
 export function MenubarDemo() {
     return (

@@ -1,11 +1,11 @@
 'use client';
 
+import { addDays } from 'date-fns';
 import * as React from 'react';
+import { type DateRange } from 'react-day-picker';
 
 import { Calendar } from '@/registry/new-york-v4/ui/calendar';
 
-import { addDays } from 'date-fns';
-import { type DateRange } from 'react-day-picker';
 
 export function CalendarDemo() {
     const [date, setDate] = React.useState<Date | undefined>(new Date());

@@ -1,9 +1,10 @@
+import { ChevronLeftIcon, ChevronRightIcon, MoreHorizontalIcon } from 'lucide-react';
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
-import { Button, buttonVariants } from '@/registry/new-york-v4/ui/button';
+import type { Button} from '@/registry/new-york-v4/ui/button';
+import { buttonVariants } from '@/registry/new-york-v4/ui/button';
 
-import { ChevronLeftIcon, ChevronRightIcon, MoreHorizontalIcon } from 'lucide-react';
 
 function Pagination({ className, ...props }: React.ComponentProps<'nav'>) {
     return (

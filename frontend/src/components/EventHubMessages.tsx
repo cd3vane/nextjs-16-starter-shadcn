@@ -30,14 +30,14 @@ export default function EventHubMessages() {
             connection.stop();
         };
     }, []);
-    console.log(messages);
-    return (
+
+return (
         <div>
             <h2>EventHub Messages</h2>
             <ul>
                 {messages.map((m, i) => (
                     <li key={i}>
-                       {m}
+                        [{new Date(m.timestamp).toLocaleTimeString()}] {m.text}
                     </li>
                 ))}
             </ul>

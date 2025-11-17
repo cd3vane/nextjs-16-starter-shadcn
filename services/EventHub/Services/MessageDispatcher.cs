@@ -11,6 +11,6 @@ public class MessageDispatcher(ILogger<MessageDispatcher> logger, IHubContext<Me
     public async Task DispatchAsync(Message message)
     {
         logger.LogInformation("Dispatching message: {Message}", message.Text);
-        await hubContext.Clients.All.SendAsync("ReceiveMessage", message.Text);
+        await hubContext.Clients.All.SendAsync("ReceiveMessage", message);
     }
 }

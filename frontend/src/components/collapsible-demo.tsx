@@ -1,7 +1,7 @@
 'use client';
 
 import { ChevronsUpDown } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/registry/new-york-v4/ui/collapsible';

@@ -14,7 +14,7 @@ import {
     Settings,
     Video
 } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import {
     Breadcrumb,

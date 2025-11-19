@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import { Card, CardContent } from '@/registry/new-york-v4/ui/card';
 import {

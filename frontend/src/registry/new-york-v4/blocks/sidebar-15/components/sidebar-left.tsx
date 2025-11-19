@@ -13,7 +13,7 @@ import {
     Sparkles,
     Trash2
 } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import { NavFavorites } from '@/registry/new-york-v4/blocks/sidebar-15/components/nav-favorites';
 import { NavMain } from '@/registry/new-york-v4/blocks/sidebar-15/components/nav-main';

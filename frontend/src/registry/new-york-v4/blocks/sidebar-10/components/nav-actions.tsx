@@ -17,7 +17,7 @@ import {
     Trash,
     Trash2
 } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york-v4/ui/popover';

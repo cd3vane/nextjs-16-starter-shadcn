@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import React from 'react';
 
 import { Label } from '@/registry/new-york-v4/ui/label';
 import { Slider } from '@/registry/new-york-v4/ui/slider';

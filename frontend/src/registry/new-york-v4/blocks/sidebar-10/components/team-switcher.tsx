@@ -1,7 +1,7 @@
 'use client';
 
 import { ChevronDown, Plus } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import {
     DropdownMenu,

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import * as React from 'react';
+import React from 'react';
 
 
 import { ScrollArea, ScrollBar } from '@/registry/new-york-v4/ui/scroll-area';

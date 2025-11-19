@@ -1,5 +1,5 @@
 import { Plus } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import { Calendars } from '@/registry/new-york-v4/blocks/sidebar-15/components/calendars';
 import { DatePicker } from '@/registry/new-york-v4/blocks/sidebar-15/components/date-picker';

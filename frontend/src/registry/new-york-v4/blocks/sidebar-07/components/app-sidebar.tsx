@@ -12,7 +12,7 @@ import {
     Settings2,
     SquareTerminal
 } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import { NavMain } from '@/registry/new-york-v4/blocks/sidebar-07/components/nav-main';
 import { NavProjects } from '@/registry/new-york-v4/blocks/sidebar-07/components/nav-projects';

@@ -1,5 +1,5 @@
 import { Check, ChevronRight } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/registry/new-york-v4/ui/collapsible';
 import {

@@ -1,10 +1,10 @@
-import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
 import localFont from 'next/font/local';
 import { ThemeProvider } from 'next-themes';
 
 import '@/app/globals.css';
+
 import { Toaster } from '@/registry/new-york-v4/ui/sonner';
 
 const geistSans = localFont({

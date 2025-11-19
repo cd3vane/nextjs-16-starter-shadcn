@@ -15,7 +15,7 @@ import {
     TrashIcon,
     UserIcon
 } from 'lucide-react';
-import * as React from 'react';
+import React from 'react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/registry/new-york-v4/ui/avatar';
 import { Button } from '@/registry/new-york-v4/ui/button';

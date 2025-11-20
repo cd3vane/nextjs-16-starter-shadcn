@@ -1,6 +1,7 @@
 'use client';
 
-import * as React from 'react';
+import { BookOpen, Bot, Command, Frame, LifeBuoy, Map, PieChart, Send, Settings2, SquareTerminal } from 'lucide-react';
+import React from 'react';
 
 import { NavMain } from '@/registry/new-york-v4/blocks/sidebar-16/components/nav-main';
 import { NavProjects } from '@/registry/new-york-v4/blocks/sidebar-16/components/nav-projects';
@@ -16,7 +17,6 @@ import {
     SidebarMenuItem
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { BookOpen, Bot, Command, Frame, LifeBuoy, Map, PieChart, Send, Settings2, SquareTerminal } from 'lucide-react';
 
 const data = {
     user: {

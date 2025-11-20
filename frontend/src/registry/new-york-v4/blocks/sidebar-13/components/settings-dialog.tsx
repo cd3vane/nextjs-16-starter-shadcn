@@ -1,6 +1,20 @@
 'use client';
 
-import * as React from 'react';
+import {
+    Bell,
+    Check,
+    Globe,
+    Home,
+    Keyboard,
+    Link,
+    Lock,
+    Menu,
+    MessageCircle,
+    Paintbrush,
+    Settings,
+    Video
+} from 'lucide-react';
+import React from 'react';
 
 import {
     Breadcrumb,
@@ -23,20 +37,6 @@ import {
     SidebarProvider
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import {
-    Bell,
-    Check,
-    Globe,
-    Home,
-    Keyboard,
-    Link,
-    Lock,
-    Menu,
-    MessageCircle,
-    Paintbrush,
-    Settings,
-    Video
-} from 'lucide-react';
 
 const data = {
     nav: [

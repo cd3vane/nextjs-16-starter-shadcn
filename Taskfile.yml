@@ -1,0 +1,24 @@
+version: '3'
+
+tasks:
+  dev:
+    desc: Run all services in dev mode
+    cmds:
+      - task: infra
+      - task: eventhub
+      - task: frontend
+
+  infra:
+    dir: infra
+    cmds:
+      - docker-compose up
+
+  eventhub:
+    dir: services/EventHub
+    cmds:
+      - dotnet run
+
+  frontend:
+    dir: frontend
+    cmds:
+      - pnpm dev

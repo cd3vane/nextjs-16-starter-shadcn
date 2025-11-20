@@ -1,8 +1,12 @@
 'use client';
 
+import { TrendingUp } from 'lucide-react';
+import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
+import type {
+    ChartConfig} from '@/registry/new-york-v4/ui/chart';
 import {
-    ChartConfig,
     ChartContainer,
     ChartLegend,
     ChartLegendContent,
@@ -10,8 +14,6 @@ import {
     ChartTooltipContent
 } from '@/registry/new-york-v4/ui/chart';
 
-import { TrendingUp } from 'lucide-react';
-import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
 
 export const description = 'A stacked bar chart with a legend';
 

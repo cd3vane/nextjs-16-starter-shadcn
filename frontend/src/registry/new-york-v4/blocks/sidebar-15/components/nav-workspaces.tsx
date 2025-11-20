@@ -1,3 +1,5 @@
+import { ChevronRight, MoreHorizontal, Plus } from 'lucide-react';
+
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/registry/new-york-v4/ui/collapsible';
 import {
     SidebarGroup,
@@ -12,7 +14,6 @@ import {
     SidebarMenuSubItem
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { ChevronRight, MoreHorizontal, Plus } from 'lucide-react';
 
 export function NavWorkspaces({
     workspaces

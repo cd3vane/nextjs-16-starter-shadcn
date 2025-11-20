@@ -1,8 +1,9 @@
 'use client';
 
+import { toast } from 'sonner';
+
 import { Button } from '@/registry/new-york-v4/ui/button';
 
-import { toast } from 'sonner';
 
 export function SonnerDemo() {
     return (

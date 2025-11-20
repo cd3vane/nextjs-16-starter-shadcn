@@ -1,6 +1,7 @@
+import { BoldIcon, ItalicIcon, UnderlineIcon } from 'lucide-react';
+
 import { ToggleGroup, ToggleGroupItem } from '@/registry/new-york-v4/ui/toggle-group';
 
-import { BoldIcon, ItalicIcon, UnderlineIcon } from 'lucide-react';
 
 export function ToggleGroupDemo() {
     return (

@@ -1,19 +1,5 @@
 'use client';
 
-import * as React from 'react';
-
-import { Button } from '@/registry/new-york-v4/ui/button';
-import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york-v4/ui/popover';
-import {
-    Sidebar,
-    SidebarContent,
-    SidebarGroup,
-    SidebarGroupContent,
-    SidebarMenu,
-    SidebarMenuButton,
-    SidebarMenuItem
-} from '@/registry/new-york-v4/ui/sidebar';
-
 import {
     ArrowDown,
     ArrowUp,
@@ -31,6 +17,20 @@ import {
     Trash,
     Trash2
 } from 'lucide-react';
+import React from 'react';
+
+import { Button } from '@/registry/new-york-v4/ui/button';
+import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york-v4/ui/popover';
+import {
+    Sidebar,
+    SidebarContent,
+    SidebarGroup,
+    SidebarGroupContent,
+    SidebarMenu,
+    SidebarMenuButton,
+    SidebarMenuItem
+} from '@/registry/new-york-v4/ui/sidebar';
+
 
 const data = [
     [

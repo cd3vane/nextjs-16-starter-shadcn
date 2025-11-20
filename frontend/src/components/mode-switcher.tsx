@@ -1,13 +1,13 @@
 'use client';
 
-import * as React from 'react';
-
+import { MoonIcon, SunIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import React from 'react';
+
 
 import { META_THEME_COLORS, useMetaColor } from '@/hooks/use-meta-color';
 import { Button } from '@/registry/new-york-v4/ui/button';
 
-import { MoonIcon, SunIcon } from 'lucide-react';
 
 export function ModeSwitcher() {
     const { setTheme, resolvedTheme } = useTheme();

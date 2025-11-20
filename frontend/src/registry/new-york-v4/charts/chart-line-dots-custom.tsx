@@ -1,10 +1,12 @@
 'use client';
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
-import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from '@/registry/new-york-v4/ui/chart';
-
 import { GitCommitVertical, TrendingUp } from 'lucide-react';
 import { CartesianGrid, Line, LineChart, XAxis } from 'recharts';
+
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
+import type { ChartConfig} from '@/registry/new-york-v4/ui/chart';
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/registry/new-york-v4/ui/chart';
+
 
 export const description = 'A line chart with custom dots';
 
@@ -64,8 +66,8 @@ export function ChartLineDotsCustom() {
                                 return (
                                     <GitCommitVertical
                                         key={payload.month}
-                                        x={cx - r / 2}
-                                        y={cy - r / 2}
+                                        x={cx ?? 0 - r / 2}
+                                        y={cy ?? 0 - r / 2}
                                         width={r}
                                         height={r}
                                         fill='hsl(var(--background))'

@@ -1,10 +1,12 @@
 'use client';
 
-import * as React from 'react';
+import React from 'react';
+import { Label, Pie, PieChart, Sector } from 'recharts';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
+import type {
+    ChartConfig} from '@/registry/new-york-v4/ui/chart';
 import {
-    ChartConfig,
     ChartContainer,
     ChartStyle,
     ChartTooltip,
@@ -12,8 +14,7 @@ import {
 } from '@/registry/new-york-v4/ui/chart';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/registry/new-york-v4/ui/select';
 
-import { Label, Pie, PieChart, Sector } from 'recharts';
-import { PieSectorDataItem } from 'recharts/types/polar/Pie';
+import type { PieSectorDataItem } from 'recharts/types/polar/Pie';
 
 export const description = 'An interactive pie chart';
 

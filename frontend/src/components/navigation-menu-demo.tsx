@@ -1,8 +1,9 @@
 'use client';
 
-import * as React from 'react';
-
+import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from 'lucide-react';
 import Link from 'next/link';
+import React from 'react';
+
 
 import {
     NavigationMenu,
@@ -14,7 +15,6 @@ import {
     navigationMenuTriggerStyle
 } from '@/registry/new-york-v4/ui/navigation-menu';
 
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from 'lucide-react';
 
 const components: { title: string; href: string; description: string }[] = [
     {

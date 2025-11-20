@@ -1,4 +1,5 @@
-import * as React from 'react';
+import { Plus } from 'lucide-react';
+import React from 'react';
 
 import { Calendars } from '@/registry/new-york-v4/blocks/sidebar-12/components/calendars';
 import { DatePicker } from '@/registry/new-york-v4/blocks/sidebar-12/components/date-picker';
@@ -15,7 +16,6 @@ import {
     SidebarSeparator
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { Plus } from 'lucide-react';
 
 // This is sample data.
 const data = {

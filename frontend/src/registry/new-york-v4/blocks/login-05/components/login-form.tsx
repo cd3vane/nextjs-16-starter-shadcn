@@ -1,9 +1,10 @@
+import { GalleryVerticalEnd } from 'lucide-react';
+
 import { cn } from '@/registry/new-york-v4/lib/utils';
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { Input } from '@/registry/new-york-v4/ui/input';
 import { Label } from '@/registry/new-york-v4/ui/label';
 
-import { GalleryVerticalEnd } from 'lucide-react';
 
 export function LoginForm({ className, ...props }: React.ComponentProps<'div'>) {
     return (

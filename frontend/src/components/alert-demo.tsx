@@ -1,6 +1,3 @@
-import { Alert, AlertDescription, AlertTitle } from '@/registry/new-york-v4/ui/alert';
-import { Button } from '@/registry/new-york-v4/ui/button';
-
 import {
     AlertCircleIcon,
     BookmarkCheckIcon,
@@ -9,6 +6,10 @@ import {
     PopcornIcon,
     ShieldAlertIcon
 } from 'lucide-react';
+
+import { Alert, AlertDescription, AlertTitle } from '@/registry/new-york-v4/ui/alert';
+import { Button } from '@/registry/new-york-v4/ui/button';
+
 
 export function AlertDemo() {
     return (

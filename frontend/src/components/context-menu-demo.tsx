@@ -1,3 +1,5 @@
+import { Code2Icon, PlusIcon, TrashIcon } from 'lucide-react';
+
 import {
     ContextMenu,
     ContextMenuCheckboxItem,
@@ -14,7 +16,6 @@ import {
     ContextMenuTrigger
 } from '@/registry/new-york-v4/ui/context-menu';
 
-import { Code2Icon, PlusIcon, TrashIcon } from 'lucide-react';
 
 export function ContextMenuDemo() {
     return (

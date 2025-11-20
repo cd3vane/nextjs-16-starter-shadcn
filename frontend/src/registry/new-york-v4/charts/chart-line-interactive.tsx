@@ -1,11 +1,12 @@
 'use client';
 
-import * as React from 'react';
+import React from 'react';
+import { CartesianGrid, Line, LineChart, XAxis } from 'recharts';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
-import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from '@/registry/new-york-v4/ui/chart';
+import type { ChartConfig} from '@/registry/new-york-v4/ui/chart';
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/registry/new-york-v4/ui/chart';
 
-import { CartesianGrid, Line, LineChart, XAxis } from 'recharts';
 
 export const description = 'An interactive line chart';
 

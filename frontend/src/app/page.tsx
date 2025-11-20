@@ -1,4 +1,4 @@
-import HomePage from '@/app/(delete-this-and-modify-page.tsx)/HomePage';
+import EventHubMessages from "../components/EventHubMessages";
 
 /**
  * The main page component that renders the HomePage component.
@@ -6,7 +6,10 @@ import HomePage from '@/app/(delete-this-and-modify-page.tsx)/HomePage';
  * @returns {JSX.Element} The rendered HomePage component.
  */
 const Page = () => {
-    return <HomePage />;
+    return (<main>
+        <h1>EventHub Demo</h1>
+        <EventHubMessages />
+    </main>)
 };
 
 export default Page;

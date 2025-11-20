@@ -1,13 +1,5 @@
 'use client';
 
-import * as React from 'react';
-
-import { NavMain } from '@/registry/new-york-v4/blocks/sidebar-07/components/nav-main';
-import { NavProjects } from '@/registry/new-york-v4/blocks/sidebar-07/components/nav-projects';
-import { NavUser } from '@/registry/new-york-v4/blocks/sidebar-07/components/nav-user';
-import { TeamSwitcher } from '@/registry/new-york-v4/blocks/sidebar-07/components/team-switcher';
-import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail } from '@/registry/new-york-v4/ui/sidebar';
-
 import {
     AudioWaveform,
     BookOpen,
@@ -20,6 +12,14 @@ import {
     Settings2,
     SquareTerminal
 } from 'lucide-react';
+import React from 'react';
+
+import { NavMain } from '@/registry/new-york-v4/blocks/sidebar-07/components/nav-main';
+import { NavProjects } from '@/registry/new-york-v4/blocks/sidebar-07/components/nav-projects';
+import { NavUser } from '@/registry/new-york-v4/blocks/sidebar-07/components/nav-user';
+import { TeamSwitcher } from '@/registry/new-york-v4/blocks/sidebar-07/components/team-switcher';
+import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail } from '@/registry/new-york-v4/ui/sidebar';
+
 
 // This is sample data.
 const data = {

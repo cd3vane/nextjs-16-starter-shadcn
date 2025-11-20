@@ -1,8 +1,8 @@
 'use client';
 
-import * as React from 'react';
-
 import { useTheme } from 'next-themes';
+import React from 'react';
+
 
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
@@ -134,7 +134,7 @@ export function FormsDemo() {
                                                 className='size-3.5 rounded-full'
                                                 style={{
                                                     backgroundColor:
-                                                        themes[theme as keyof typeof themes]['light']['--primary']
+                                                        themes[theme as keyof typeof themes].light['--primary']
                                                 }}
                                             />
                                             {theme}

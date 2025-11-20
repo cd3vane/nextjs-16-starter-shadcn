@@ -1,3 +1,4 @@
+import { BathIcon, BedIcon, LandPlotIcon } from 'lucide-react';
 import Image from 'next/image';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/registry/new-york-v4/ui/avatar';
@@ -7,7 +8,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Input } from '@/registry/new-york-v4/ui/input';
 import { Label } from '@/registry/new-york-v4/ui/label';
 
-import { BathIcon, BedIcon, LandPlotIcon } from 'lucide-react';
 
 export function CardDemo() {
     return (

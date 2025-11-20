@@ -1,11 +1,15 @@
 'use client';
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
-import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from '@/registry/new-york-v4/ui/chart';
-
 import { TrendingUp } from 'lucide-react';
 import { Label, Pie, PieChart, Sector } from 'recharts';
-import { PieSectorDataItem } from 'recharts/types/polar/Pie';
+
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
+import type { ChartConfig} from '@/registry/new-york-v4/ui/chart';
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/registry/new-york-v4/ui/chart';
+
+
+import type { PieSectorDataItem } from 'recharts/types/polar/Pie';
+
 
 export const description = 'A donut chart with an active sector';
 

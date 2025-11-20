@@ -1,19 +1,16 @@
 ﻿using System.Threading.Tasks;
+using EventHub.Hubs;
 using EventHub.Models;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 
-public class MessageDispatcher
+namespace EventHub.Services;
+
+public class MessageDispatcher(ILogger<MessageDispatcher> logger, IHubContext<MessageHub> hubContext)
 {
-    private readonly ILogger<MessageDispatcher> _logger;
-
-    public MessageDispatcher(ILogger<MessageDispatcher> logger)
+    public async Task DispatchAsync(Message message)
     {
-        _logger = logger;
-    }
-
-    public Task DispatchAsync(Message message)
-    {
-        _logger.LogInformation("Dispatching message: {Message}", message.Text);
-        return Task.CompletedTask;
+        logger.LogInformation("Dispatching message: {Message}", message.Text);
+        await hubContext.Clients.All.SendAsync("ReceiveMessage", message);
     }
 }

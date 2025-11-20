@@ -16,7 +16,22 @@ builder.Services.AddSignalR();
 builder.Services.AddSingleton<MessageDispatcher>();
 builder.Services.AddHostedService<RabbitMqListener>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+});
+
+
+
 var app = builder.Build();
+
+app.UseCors("CorsPolicy");
 
 app.MapHub<MessageHub>("/messages");
 

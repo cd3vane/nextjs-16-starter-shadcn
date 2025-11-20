@@ -1,8 +1,12 @@
 'use client';
 
+import { TrendingDown, TrendingUp } from 'lucide-react';
+import { Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
+import type {
+    ChartConfig} from '@/registry/new-york-v4/ui/chart';
 import {
-    ChartConfig,
     ChartContainer,
     ChartLegend,
     ChartLegendContent,
@@ -10,8 +14,6 @@ import {
     ChartTooltipContent
 } from '@/registry/new-york-v4/ui/chart';
 
-import { TrendingDown, TrendingUp } from 'lucide-react';
-import { Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
 
 export const description = 'An area chart with icons';
 

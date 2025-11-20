@@ -1,4 +1,5 @@
-import * as React from 'react';
+import { ChartBarIcon, ChartLineIcon, ChartPieIcon, CircleDashed } from 'lucide-react';
+import React from 'react';
 
 import {
     Select,
@@ -10,7 +11,6 @@ import {
     SelectValue
 } from '@/registry/new-york-v4/ui/select';
 
-import { ChartBarIcon, ChartLineIcon, ChartPieIcon, CircleDashed } from 'lucide-react';
 
 export function SelectDemo() {
     return (

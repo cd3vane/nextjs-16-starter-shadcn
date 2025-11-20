@@ -1,24 +1,24 @@
 'use client';
 
-import * as React from 'react';
+import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import React from 'react';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/registry/new-york-v4/ui/button';
 
-import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
 type CarouselOptions = UseCarouselParameters[0];
 type CarouselPlugin = UseCarouselParameters[1];
 
-type CarouselProps = {
+interface CarouselProps {
     opts?: CarouselOptions;
     plugins?: CarouselPlugin;
     orientation?: 'horizontal' | 'vertical';
     setApi?: (api: CarouselApi) => void;
-};
+}
 
 type CarouselContextProps = {
     carouselRef: ReturnType<typeof useEmblaCarousel>[0];
@@ -107,7 +107,7 @@ function Carousel({
         <CarouselContext.Provider
             value={{
                 carouselRef,
-                api: api,
+                api,
                 opts,
                 orientation: orientation || (opts?.axis === 'y' ? 'vertical' : 'horizontal'),
                 scrollPrev,

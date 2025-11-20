@@ -1,4 +1,5 @@
-import * as React from 'react';
+import { Check, ChevronRight } from 'lucide-react';
+import React from 'react';
 
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/registry/new-york-v4/ui/collapsible';
 import {
@@ -11,7 +12,6 @@ import {
     SidebarSeparator
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { Check, ChevronRight } from 'lucide-react';
 
 export function Calendars({
     calendars

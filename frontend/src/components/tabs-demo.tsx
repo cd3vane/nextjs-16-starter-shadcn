@@ -1,10 +1,11 @@
+import { AppWindowIcon, CodeIcon } from 'lucide-react';
+
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
 import { Input } from '@/registry/new-york-v4/ui/input';
 import { Label } from '@/registry/new-york-v4/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/registry/new-york-v4/ui/tabs';
 
-import { AppWindowIcon, CodeIcon } from 'lucide-react';
 
 export function TabsDemo() {
     return (

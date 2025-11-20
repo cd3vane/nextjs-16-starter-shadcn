@@ -1,14 +1,5 @@
 'use client';
 
-import * as React from 'react';
-
-import { NavFavorites } from '@/registry/new-york-v4/blocks/sidebar-10/components/nav-favorites';
-import { NavMain } from '@/registry/new-york-v4/blocks/sidebar-10/components/nav-main';
-import { NavSecondary } from '@/registry/new-york-v4/blocks/sidebar-10/components/nav-secondary';
-import { NavWorkspaces } from '@/registry/new-york-v4/blocks/sidebar-10/components/nav-workspaces';
-import { TeamSwitcher } from '@/registry/new-york-v4/blocks/sidebar-10/components/team-switcher';
-import { Sidebar, SidebarContent, SidebarHeader, SidebarRail } from '@/registry/new-york-v4/ui/sidebar';
-
 import {
     AudioWaveform,
     Blocks,
@@ -22,6 +13,15 @@ import {
     Sparkles,
     Trash2
 } from 'lucide-react';
+import React from 'react';
+
+import { NavFavorites } from '@/registry/new-york-v4/blocks/sidebar-10/components/nav-favorites';
+import { NavMain } from '@/registry/new-york-v4/blocks/sidebar-10/components/nav-main';
+import { NavSecondary } from '@/registry/new-york-v4/blocks/sidebar-10/components/nav-secondary';
+import { NavWorkspaces } from '@/registry/new-york-v4/blocks/sidebar-10/components/nav-workspaces';
+import { TeamSwitcher } from '@/registry/new-york-v4/blocks/sidebar-10/components/team-switcher';
+import { Sidebar, SidebarContent, SidebarHeader, SidebarRail } from '@/registry/new-york-v4/ui/sidebar';
+
 
 // This is sample data.
 const data = {

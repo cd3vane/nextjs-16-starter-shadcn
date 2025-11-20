@@ -1,5 +1,7 @@
 'use client';
 
+import { ArrowUpRight, Link, MoreHorizontal, StarOff, Trash2 } from 'lucide-react';
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -17,7 +19,6 @@ import {
     useSidebar
 } from '@/registry/new-york-v4/ui/sidebar';
 
-import { ArrowUpRight, Link, MoreHorizontal, StarOff, Trash2 } from 'lucide-react';
 
 export function NavFavorites({
     favorites

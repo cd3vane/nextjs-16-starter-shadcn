@@ -1,6 +1,9 @@
 'use client';
 
-import * as React from 'react';
+import { Slot } from '@radix-ui/react-slot';
+import { cva } from 'class-variance-authority';
+import { PanelLeftIcon } from 'lucide-react';
+import React from 'react';
 
 import { useIsMobile } from '@/registry/new-york-v4/hooks/use-mobile';
 import { cn } from '@/registry/new-york-v4/lib/utils';
@@ -10,10 +13,8 @@ import { Separator } from '@/registry/new-york-v4/ui/separator';
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from '@/registry/new-york-v4/ui/sheet';
 import { Skeleton } from '@/registry/new-york-v4/ui/skeleton';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/registry/new-york-v4/ui/tooltip';
-import { Slot } from '@radix-ui/react-slot';
 
-import { VariantProps, cva } from 'class-variance-authority';
-import { PanelLeftIcon } from 'lucide-react';
+import type { VariantProps} from 'class-variance-authority';
 
 const SIDEBAR_COOKIE_NAME = 'sidebar_state';
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
@@ -22,7 +23,7 @@ const SIDEBAR_WIDTH_MOBILE = '18rem';
 const SIDEBAR_WIDTH_ICON = '3rem';
 const SIDEBAR_KEYBOARD_SHORTCUT = 'b';
 
-type SidebarContext = {
+interface SidebarContext {
     state: 'expanded' | 'collapsed';
     open: boolean;
     setOpen: (open: boolean) => void;
@@ -30,7 +31,7 @@ type SidebarContext = {
     setOpenMobile: (open: boolean) => void;
     isMobile: boolean;
     toggleSidebar: () => void;
-};
+}
 
 const SidebarContext = React.createContext<SidebarContext | null>(null);
 

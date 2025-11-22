@@ -29,6 +29,18 @@ services:
       - "8080:8080"  # expose SignalR endpoint to host
     networks:
       - eventnet
+  
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    depends_on:
+      - rabbitmq
+    ports:
+      - "3000:3000"  # expose SignalR endpoint to host
+    networks:
+      - eventnet
 
 networks:
   eventnet:

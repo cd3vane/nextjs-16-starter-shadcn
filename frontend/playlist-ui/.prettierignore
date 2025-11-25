@@ -1,0 +1,10 @@
+node_modules/
+.next/
+dist/
+build/
+.turbo/
+pnpm-lock.yaml
+
+# Files and folders that should not be formatted
+**/fontBase64.ts
+packages/@fpfx-technologies-llc/types/api/generators/

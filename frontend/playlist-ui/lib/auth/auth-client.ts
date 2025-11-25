@@ -1,10 +1,12 @@
-import { createAuthClient } from "better-auth/client"
-export const authClient =  createAuthClient()
+import { createAuthClient } from 'better-auth/react';
+export const authClient = createAuthClient();
 
 export const signIn = async () => {
-    const data = await authClient.signIn.social({
-        provider: "spotify",
-    })
-    
-    console.log(data)
-}
+  const data = await authClient.signIn.social({
+    provider: 'spotify',
+  });
+
+  return data;
+};
+
+export const { signUp, signOut, useSession } = authClient;
